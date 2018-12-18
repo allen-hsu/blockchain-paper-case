@@ -1,0 +1,25 @@
+{
+  "name": "blockchain-paper-case",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "postinstall": "touch secret.js",
+    "truffle-compile": "dexon-truffle compile",
+    "migrate-local": "dexon-truffle migrate --network development --reset",
+    "truffle-test": "dexon-truffle test --network development",
+    "migrate": "dexon-truffle migrate --network dexon --reset",
+    "start": "cd client & npm run start",
+    "build": "cd client & npm run build",
+    "test": "cd client & npm run test",
+    "eject": "cd client & npm run eject"
+  },
+  "dependencies": {
+    "@dexon-foundation/truffle": "^4.1.16",
+    "truffle-hdwallet-provider": "github:trufflesuite/truffle-hdwallet-provider"
+  }
+}
